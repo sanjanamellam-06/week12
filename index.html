@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Add Two Numbers</h2>
+
+<input type="number" id="n1" placeholder="Enter first number">
+<input type="number" id="n2" placeholder="Enter second number">
+
+<button onclick="add()">Add</button>
+
+<p id="result"></p>
+
+<script>
+function add() {
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+
+    let sum = a + b;
+
+    document.getElementById("result").innerHTML = "Sum = " + sum;
+}
+</script>
+
+</body>
+</html>
